@@ -1,1 +1,6 @@
+com\example\AppServicios\Enumeraciones\Profesion.class
+com\example\AppServicios\Entidades\Cliente.class
+com\example\AppServicios\Enumeraciones\DiasDiponibles.class
+com\example\AppServicios\Entidades\Persona.class
+com\example\AppServicios\Entidades\Profesor.class
 com\example\AppServicios\AppServiciosApplication.class
