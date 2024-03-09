@@ -19,7 +19,7 @@ import com.example.AppServicios.Enumeraciones.Rol;
 
 /**
  *
- * @author Ruben..
+
  */
 @Entity
 @Data
