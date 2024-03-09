@@ -23,6 +23,7 @@ public class Materia {
     private Double precio;//precio por hora
 
     private Puntuacion puntuacion;
+    
 }
    
 

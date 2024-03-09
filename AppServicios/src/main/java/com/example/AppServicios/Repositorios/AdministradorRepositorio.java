@@ -18,4 +18,5 @@ import org.springframework.stereotype.Repository;
 public interface AdministradorRepositorio extends JpaRepository<Administrador, String>{
      @Query ("SELECT a  from administrador a where a.email = :email")
     public Administrador buscarPorEmail(@Param("email")String email);
+    
 }

@@ -20,5 +20,6 @@ public class Profesor extends Persona {
     private Materia materia;
     @OneToOne
     private Imagen imagen;
+    
 
 }
