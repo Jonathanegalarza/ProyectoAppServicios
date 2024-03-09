@@ -16,5 +16,6 @@ public enum Rol {
     public String getDescripcion() {
         return descripcion;
     }
+    
 }
 

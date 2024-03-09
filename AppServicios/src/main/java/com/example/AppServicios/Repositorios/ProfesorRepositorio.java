@@ -18,4 +18,5 @@ import org.springframework.stereotype.Repository;
 public interface ProfesorRepositorio extends JpaRepository<Profesor, String>{
     @Query ("SELECT pr  from profesor pr where pr.email = :email")
     public Profesor buscarPorEmail(@Param("email")String email);
+    
 }

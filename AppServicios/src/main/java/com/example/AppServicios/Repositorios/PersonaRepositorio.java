@@ -20,5 +20,6 @@ public interface PersonaRepositorio extends JpaRepository<Persona,String>{
 
     @Query ("SELECT p  from persona p where p.email = :email")
     public Persona buscarPorEmail(@Param("email")String email);
+    
 }
 

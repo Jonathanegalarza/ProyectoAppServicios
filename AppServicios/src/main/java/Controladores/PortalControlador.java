@@ -2,17 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.example.AppServicios.Entidades;
+package Controladores;
 
-import jakarta.persistence.Entity;
+import org.springframework.stereotype.Controller;
 
-/**
- *
- * @author Ruben
- */
-@Entity
-
-public class Cliente extends Persona{
-   
+@Controller
+public class PortalControlador {
     
 }
