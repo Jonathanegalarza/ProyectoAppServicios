@@ -13,11 +13,11 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author Ruben
  */
 public class ProfesorServicio {
-     @Autowired
-   ProfesorRepositorio personaRepositorio;
-    
-    public Profesor buscarPorEmail(String email) {
-        Profesor persona = personaRepositorio.buscarPorEmail(email);
-        return persona;
-    }
+//     @Autowired
+//   ProfesorRepositorio personaRepositorio;
+//    
+//    public Profesor buscarPorEmail(String email) {
+//        Profesor persona = personaRepositorio.buscarPorEmail(email);
+//        return persona;
+//    }
 }

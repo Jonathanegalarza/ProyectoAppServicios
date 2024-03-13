@@ -15,11 +15,11 @@ import org.springframework.stereotype.Repository;
  * @author Ruben
  */
 @Repository
-public interface PersonaRepositorio extends JpaRepository<Persona,String>{
-
-
-    @Query ("SELECT p  from persona p where p.email = :email")
-    public Persona buscarPorEmail(@Param("email")String email);
+public interface PersonaRepositorio extends JpaRepository<Persona,Long>{
+//
+//
+//    @Query ("SELECT p  from persona p where p.email = :email")
+//    public Persona buscarPorEmail(@Param("email")String email);
     
 }
 

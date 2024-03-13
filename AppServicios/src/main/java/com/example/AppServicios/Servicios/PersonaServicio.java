@@ -15,11 +15,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class PersonaServicio {
-     @Autowired
-   PersonaRepositorio personaRepositorio;
-    
-    public Persona buscarPorEmail(String email) {
-        Persona persona = personaRepositorio.buscarPorEmail(email);
-        return persona;
-    }
+//     @Autowired
+//   PersonaRepositorio personaRepositorio;
+//    
+//    public Persona buscarPorEmail(String email) {
+//        Persona persona = personaRepositorio.buscarPorEmail(email);
+//        return persona;
+//    }
 }

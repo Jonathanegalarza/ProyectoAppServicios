@@ -3,6 +3,7 @@ package com.example.AppServicios.Entidades;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
+import java.util.List;
 import lombok.Data;
 
 /**
@@ -17,7 +18,7 @@ public class Profesor extends Persona {
     private String diasDisponibles;
 
     @OneToMany
-    private Materia materia;
+    private List<Materia> materia;
     @OneToOne
     private Imagen imagen;
     

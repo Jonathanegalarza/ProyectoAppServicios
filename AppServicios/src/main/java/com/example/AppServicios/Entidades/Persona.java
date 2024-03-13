@@ -26,8 +26,6 @@ import com.example.AppServicios.Enumeraciones.Rol;
 public class Persona {
 
     @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid", strategy = "uuid2")
     private Long id;
 
     private String dni;
