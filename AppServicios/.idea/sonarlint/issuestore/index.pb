@@ -27,3 +27,11 @@ x
 Hsrc/main/java/com/example/AppServicios/Servicios/ComentarioServicio.java,0\9\0923a12178457712b5a656b1e37df9d819700178
 |
 Lsrc/main/java/com/example/AppServicios/Repositorios/ProfesorRepositorio.java,5\2\52868462725f750716ec5dfc07abeb4e12c98611
+{
+Ksrc/main/java/com/example/AppServicios/Repositorios/ClienteRepositorio.java,a\c\acb89096930df8bcc3f87e790014c4e1320378c5
+z
+Jsrc/main/java/com/example/AppServicios/Repositorios/ImagenRepositorio.java,8\9\89bd8573ed5b459c459a42e1a374dcdeaf79b797
+{
+Ksrc/main/java/com/example/AppServicios/Repositorios/MateriaRepositorio.java,d\9\d901ca375576e44084d9d9c831857f3cb879377d
+{
+Ksrc/main/java/com/example/AppServicios/Repositorios/PersonaRepositorio.java,2\b\2b74ed493a68f629564bfaa4ba531de9a76cd72e

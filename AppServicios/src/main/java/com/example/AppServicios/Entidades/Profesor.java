@@ -41,8 +41,4 @@ public class Profesor extends Persona {
  */
     @OneToMany(mappedBy = "profesor", cascade = CascadeType.ALL)
     private List<Materia> materia;
-
-
-
-
 }

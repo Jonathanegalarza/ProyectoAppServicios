@@ -9,9 +9,7 @@ import lombok.Setter;
 
 @Data
 @Entity
-
 public class Puntuacion {
-
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;

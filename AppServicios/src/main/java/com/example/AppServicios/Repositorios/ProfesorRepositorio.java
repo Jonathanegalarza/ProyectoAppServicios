@@ -18,8 +18,6 @@ import java.util.Optional;
 public interface ProfesorRepositorio extends JpaRepository<Profesor, Long>{
 //    @Query ("SELECT pr FROM profesor pr WHERE pr.email = :email")
 //    public Profesor buscarPorEmail(@Param("email")String email);
-
      Optional<Profesor> findById(Long profesorId);
-
 
 }

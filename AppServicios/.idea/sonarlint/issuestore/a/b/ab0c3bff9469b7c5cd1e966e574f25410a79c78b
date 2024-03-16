@@ -1,3 +1,5 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÛÖð˜üÿÿÿÿ8µ–´Ôã1J$3165d4d9-5dc3-4b0e-844c-40eb3fb61eca
-~	java:S125"<This block of commented-out lines of code should be removed.(þ÷£8½–´Ôã1J$31f35871-8453-4e9d-aa85-0303a879cb79
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÛÖð˜üÿÿÿÿ8µ–´Ôã1J$363ce1e1-846e-4f40-9483-238994eea4a4
+~	java:S125"<This block of commented-out lines of code should be removed.(þ÷£8½–´Ôã1J$82623dbf-7f8d-4371-b677-f4e3a1351b4c
+
+java:S1128"9Remove this unused import 'jakarta.persistence.OneToOne'.(Ç­É™üÿÿÿÿ8ž­¶¦ä1J$c396acc5-3426-41a6-ab03-4371ff373c02

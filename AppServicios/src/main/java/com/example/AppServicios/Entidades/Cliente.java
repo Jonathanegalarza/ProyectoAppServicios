@@ -17,7 +17,6 @@ import java.util.List;
 @Entity
 
 public class Cliente extends Persona{
-
   /*
    La anotación @OneToMany con mappedBy = "cliente" indica que la relación está mapeada
    por la propiedad cliente en la clase Comentario. Esto significa que en la clase Comentario,

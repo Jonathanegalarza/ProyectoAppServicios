@@ -26,7 +26,6 @@ public class Materia {
      @ManyToOne
     @JoinColumn(name = "profesor_id")// Nombre de la columna de clave foránea en la tabla Materia
     private Profesor profesor;
-    
 }
    
 

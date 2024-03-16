@@ -37,7 +37,6 @@ public class Persona {
     
    @Enumerated(EnumType.STRING)
     private Rol rol;
-
     @OneToOne
     private Imagen imagen;
    
