@@ -3,14 +3,9 @@ package com.example.AppServicios.Entidades;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
 import java.util.List;
 import lombok.Data;
 
-/**
- *
- * @author Ruben
- */
 @Data
 @Entity
 

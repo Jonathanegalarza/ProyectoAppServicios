@@ -2,11 +2,9 @@
 package com.example.AppServicios.Servicios;
 
 import Excepciones.MiException;
-import com.example.AppServicios.Entidades.Cliente;
 import com.example.AppServicios.Entidades.Profesor;
 import com.example.AppServicios.Enumeraciones.Rol;
 import com.example.AppServicios.Repositorios.ProfesorRepositorio;
-import jakarta.transaction.TransactionScoped;
 import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
