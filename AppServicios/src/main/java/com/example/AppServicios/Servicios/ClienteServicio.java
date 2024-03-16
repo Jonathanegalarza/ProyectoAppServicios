@@ -6,7 +6,9 @@ package com.example.AppServicios.Servicios;
 
 import Excepciones.MiException;
 import com.example.AppServicios.Entidades.Cliente;
+import com.example.AppServicios.Enumeraciones.Rol;
 import com.example.AppServicios.Repositorios.ClienteRepositorio;
+import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,8 +32,26 @@ public class ClienteServicio {
     @Transactional
     public void crearCliente(String nombre, String apellido, String domicilio, String dni, String email, String password, String password2, String telefono) throws MiException{
     validar(nombre, apellido, dni, telefono, email, password, password2, domicilio);
-    
+        
+        Cliente cliente = new Cliente();
+        cliente.setApellido(apellido);
+        cliente.setAlta(true);
+        cliente.setNombre(nombre);
+        cliente.setDireccion(domicilio);
+        cliente.setDni(dni);
+        cliente.setEmail(email);
+        cliente.setFechaAlta(new Date());
+//        cliente.setFechaNacimiento(fechaNacimiento);
+        cliente.setId(Long.MIN_VALUE);
+//        cliente.setImagen(imagen);
+        cliente.setPassword(password);
+        cliente.setRol(Rol.ADMIN);
+        cliente.setAlta(true);
+       
+        clienteRepositorio.save(cliente);
     }
+    
+    
     
      @Transactional
     public void validar(String nombre, String apellido, String dni, String telefono, String email, String password,
