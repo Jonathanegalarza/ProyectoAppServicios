@@ -74,4 +74,12 @@ public class ClienteServicio {
             // 123456 etc
         }
 }
+   public void validarPuntuacion(int calificacion){
+
+        if(calificacion>0 && calificacion<=5){
+
+
+        }
+   }
+
 }

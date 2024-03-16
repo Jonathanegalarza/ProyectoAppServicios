@@ -4,13 +4,8 @@
  */
 package com.example.AppServicios.Entidades;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
+import jakarta.persistence.*;
+
 import java.util.Date;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
@@ -42,5 +37,8 @@ public class Persona {
     
    @Enumerated(EnumType.STRING)
     private Rol rol;
+
+    @OneToOne
+    private Imagen imagen;
    
 }
