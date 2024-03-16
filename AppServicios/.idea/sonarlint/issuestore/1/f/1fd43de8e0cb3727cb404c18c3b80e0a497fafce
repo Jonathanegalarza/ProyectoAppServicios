@@ -1,0 +1,28 @@
+
+ú	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ΩÅ‚¸8∫«µ°‰1J$42351bc6-8bcb-4492-9fe9-f63515c41c97
+{
+java:S2589="8Remove this expression which always evaluates to "false"(ú™ƒÈ8â»µ°‰1J$f8446c56-6435-4516-81e9-53a0878ba98b
+z
+java:S25891"8Remove this expression which always evaluates to "false"(Ûíﬁ8à»µ°‰1J$adc52a23-b13e-4c64-8974-fb43358fea3a
+Ä
+java:S2589("8Remove this expression which always evaluates to "false"(Üùıª˙ˇˇˇˇ8â»µ°‰1J$a9acabcd-6aee-4ed9-93fa-6a5632e35a1a
+{
+java:S2589@"8Remove this expression which always evaluates to "false"(Â–ıª8â»µ°‰1J$2e6cee8c-b50d-496f-a16c-4fc40d0a8eb9
+{
+java:S25895"8Remove this expression which always evaluates to "false"(Ôå”©8â»µ°‰1J$9371ce6a-96fe-44e8-bac5-6e8cfc06d878
+{
+java:S2589F"8Remove this expression which always evaluates to "false"(ü‚∏¶8â»µ°‰1J$3dfa1118-87c0-4009-befd-fb8fb162cfa6
+Ö
+java:S6813"BRemove this field injection and use constructor injection instead.(ÍÊƒﬁ8ë»µ°‰1J$3314a437-5edb-4da2-bacd-feb96012c9bf
+É	java:S107"<Method has 8 parameters, which is greater than 7 authorized.(·“í˚ˇˇˇˇ8ö»µ°‰1J$75bd1ee5-c46f-45cf-90ef-9f62dc2ebc61
+}	java:S107%"<Method has 8 parameters, which is greater than 7 authorized.(Óéﬂ8ö»µ°‰1J$5686b0f5-c453-476f-8a98-6a9040e1566c
+É	java:S125"<This block of commented-out lines of code should be removed.(Ω›ùä˚ˇˇˇˇ8§»µ°‰1J$033fc459-5d42-40f7-a4c6-ce1bcab4bb92
+ò
+java:S6809 "UCall transactional methods via an injected dependency instead of directly via 'this'.(ê≥ç8ß»µ°‰1J$7b5a9677-0f4a-48ab-8b20-cca1d166d1d7
+î
+java:S3776%"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Óéﬂ8≠»µ°‰1J$2e1dc9ac-8398-4cc2-ac1d-2a462f39ee51
+|
+java:S2479:":Remove the non-escaped \u00A0 character from this literal.(§ﬁÁ;8µ»µ°‰1J$a40cef76-9e0a-46c8-8f58-e79a2c760e72
+k	java:S108O")Either remove or fill this block of code.( ˘§∑8∫»µ°‰1J$df699678-6ec1-4248-9324-9703defa6f0a
+ä
+java:S1128"GRemove this unused import 'com.example.AppServicios.Entidades.Cliente'.(Ï›ÌÉ8Ω»µ°‰1J$d3089c0e-b9a0-490b-9a89-d76707d08b93

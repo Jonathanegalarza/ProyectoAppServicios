@@ -23,13 +23,9 @@ public class Materia {
     private String descripcion;//Detalle de la materia
     private String nombreMateria;
     private Double precio;//precio por hora
-
-    ///private Puntuacion puntuacion;
-    
      @ManyToOne
-    @JoinColumn(name = "profesor_id")
+    @JoinColumn(name = "profesor_id")// Nombre de la columna de clave foránea en la tabla Materia
     private Profesor profesor;
-    
 }
    
 

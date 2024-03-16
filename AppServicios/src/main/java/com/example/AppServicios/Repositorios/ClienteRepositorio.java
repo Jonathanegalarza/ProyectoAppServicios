@@ -19,7 +19,6 @@ public interface ClienteRepositorio extends JpaRepository<Cliente, Long>{
     
     @Query ("SELECT c FROM Cliente c WHERE c.email = :email")
     public Cliente buscarPorEmail(@Param("email")String email);
-    
      
     boolean existsByDni(String dni);
 
