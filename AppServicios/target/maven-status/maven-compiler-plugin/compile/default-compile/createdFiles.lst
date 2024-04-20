@@ -13,8 +13,8 @@ com\example\AppServicios\Entidades\Imagen.class
 com\example\AppServicios\Servicios\ClienteServicio.class
 com\example\AppServicios\Entidades\Persona.class
 com\example\AppServicios\Entidades\Profesor.class
+com\example\AppServicios\Controladores\PortalControlador.class
 com\example\AppServicios\Repositorios\PersonaRepositorio.class
 com\example\AppServicios\Repositorios\ProfesorRepositorio.class
 com\example\AppServicios\Repositorios\PuntuacionRepositorio.class
 com\example\AppServicios\Servicios\PersonaServicio.class
-Controladores\PortalControlador.class

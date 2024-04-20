@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos específicos */
+
+#hero {
+    background-image: url('hero-background.jpg'); /* Reemplaza 'hero-background.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#services ul li {
+    display: inline-block;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+footer p {
+    margin: 0;
+}
