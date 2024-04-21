@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .option {
+            display: inline-block;
+            margin: 20px;
+            cursor: pointer;
+        }
+        .option img {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecciona el tipo de registro</h1>
+    <div class="option">
+        <a th:href="@{/profesor/registrar}">
+        <img src="ruta_a_imagen_profesor.jpg" alt="Imagen de Profesor">
+        <p>Registro de Profesor</p>
+        </a>
+    </div>
+    <div class="option">
+        <a th:href="@{/alumno/registrar}">
+        <img src="ruta_a_imagen_alumno.jpg" alt="Imagen de Alumno">
+        <p>Registro de Alumno</p>
+        </a>
+    </div>
+</body>
+</html>

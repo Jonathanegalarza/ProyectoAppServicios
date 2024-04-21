@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
+
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
     <head>
         <title>App Servicios</title>
         <meta charset="UTF-8">
@@ -19,6 +16,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Sobre Nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
+                <li><a th:href="@{/login1}">Iniciar Sesion</a></li>
+                <li><a th:href="@{/registrar}">Registrarse</a></li>
                 <li><a href="#">Perfil</a></li>
                 <li><a href="#">Logout</a></li>
             </ul>
