@@ -5,6 +5,7 @@ com\example\AppServicios\Servicios\ProfesorServicio.class
 com\example\AppServicios\Entidades\Cliente.class
 com\example\AppServicios\Entidades\Materia.class
 com\example\AppServicios\Repositorios\ClienteRepositorio.class
+com\example\Excepciones\MiException.class
 com\example\AppServicios\Entidades\Administrador.class
 com\example\AppServicios\Repositorios\ImagenRepositorio.class
 com\example\AppServicios\Repositorios\ComentarioRepositorio.class

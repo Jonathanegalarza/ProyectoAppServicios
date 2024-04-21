@@ -1,6 +1,7 @@
 
 package com.example.AppServicios.Servicios;
 
+import com.example.AppServicios.Entidades.Imagen;
 import com.example.Excepciones.MiException;
 import com.example.AppServicios.Entidades.Profesor;
 import com.example.AppServicios.Enumeraciones.Rol;
@@ -21,49 +22,56 @@ public class ProfesorServicio {
     }
 
 @Transactional
-     public void validar(String nombre, String apellido, String dni, String telefono, String email, String password,
-            String password2, String domicilio) throws MiException {
+public void validar(String nombre, String apellido, String dni, String telefono, String email, String password,
+                    String password2, String domicilio) throws MiException {
 
-        if (nombre.isEmpty() || nombre == null) {
-            throw new MiException("el Nombre no puede ser nulo o estar vacío");
-        }
+    if (nombre == null || nombre.isEmpty()) {
+        throw new MiException("El Nombre no puede ser nulo o estar vacío");
+    }
 
-        //INVErtir todos para evitar el error en amarillo
-        if (apellido == null || apellido.isEmpty()) {
-            throw new MiException("El Apellido no puede ser nulo o estar vacio");
-        }
+    if (apellido == null || apellido.isEmpty()) {
+        throw new MiException("El Apellido no puede ser nulo o estar vacío");
+    }
 
-        if (domicilio.isEmpty() || domicilio == null) {
-            throw new MiException("El domicilio no puede ser nulo o estar vacio");
-        }
+    if (domicilio == null || domicilio.isEmpty()) {
+        throw new MiException("El domicilio no puede ser nulo o estar vacío");
+    }
 
-        if (dni.isEmpty() || dni == null) {
-            throw new MiException("El DNI no puede ser nulo o estar vacio");
-        }
+    if (dni == null || dni.isEmpty()) {
+        throw new MiException("El DNI no puede ser nulo o estar vacío");
+    }
 
-        if (profesorRepositorio.existsByDni(dni)) {
-            throw new MiException("El DNI ya está registrado en el sistema");
-        }
+    if (profesorRepositorio.existsByDni(dni)) {
+        throw new MiException("El DNI ya está registrado en el sistema");
+    }
 
-        if (telefono.isEmpty() || telefono == null) {
-            throw new MiException("El Telefono no puede ser nulo o estar vacio");
-        }
-        if (email.isEmpty() || email == null) {
-            throw new MiException("el Email no puede ser nulo o estar vacio");
-        }
-        if (profesorRepositorio.existsByEmail(email)) {
-            throw new MiException("El Email ya se encuentra registrado en el sistema");
-        }
-        if (password.isEmpty() || password == null || password.length() <= 5) {
-            throw new MiException("La contraseña no puede estar vacía, y debe tener más de 5 dígitos");
+    if (telefono == null || telefono.isEmpty()) {
+        throw new MiException("El Teléfono no puede ser nulo o estar vacío");
+    }
 
-            // para mas adelante hacer un validador de contarseñas ejemplo que no se a000000
-            // 123456 etc
-        }
-     }
+    if (email == null || email.isEmpty()) {
+        throw new MiException("El Email no puede ser nulo o estar vacío");
+    }
+
+    if (profesorRepositorio.existsByEmail(email)) {
+        throw new MiException("El Email ya se encuentra registrado en el sistema");
+    }
+
+    if (password == null || password.isEmpty() || password.length() <= 5) {
+        throw new MiException("La contraseña no puede estar vacía, y debe tener más de 5 dígitos");
+    }
+
+    
+    if (!password.equals(password2)) {
+        throw new MiException("Las contraseñas no coinciden");
+    }
+
+    
+}
     
      @Transactional
-        public void crearProfesor(String nombre, String apellido, String domicilio, String dni, String email, String password, String password2, String telefono) throws MiException{
+        public void crearProfesor(String nombre, String apellido, String domicilio, String dni, String email, String password, String password2, String telefono, Date fechaNacimiento,
+                Imagen imagen) throws MiException{
     
         validar(nombre, apellido, dni, telefono, email, password, password2, domicilio);
         Profesor profesor = new Profesor();
@@ -76,10 +84,10 @@ public class ProfesorServicio {
         profesor.setDni(dni);
         profesor.setEmail(email);
         profesor.setFechaAlta(new Date());
-//        profesor.setFechaNacimiento(fechaNacimiento);
+        profesor.setFechaNacimiento(fechaNacimiento);
         profesor.setHorasDisponible(password2);
         profesor.setId(Long.MIN_VALUE);
-//        profesor.setImagen(imagen);
+       profesor.setImagen(imagen);
 //        profesor.setMateria(materia);
         profesor.setNombre(nombre);
         profesor.setPassword(password);
