@@ -1,7 +1,7 @@
 
 package com.example.AppServicios.Servicios;
 
-import Excepciones.MiException;
+import com.example.Excepciones.MiException;
 import com.example.AppServicios.Entidades.Profesor;
 import com.example.AppServicios.Enumeraciones.Rol;
 import com.example.AppServicios.Repositorios.ProfesorRepositorio;
