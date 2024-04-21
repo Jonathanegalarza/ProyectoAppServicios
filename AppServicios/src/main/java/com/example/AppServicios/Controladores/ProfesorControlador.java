@@ -9,17 +9,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/")
-public class PortalControlador {
+@RequestMapping("/profesor")
+public class ProfesorControlador {
     
-  
-    
-    @GetMapping("/inicio")
-     public String inicio() {
-        return "inicio.html";
-    }
     @GetMapping("/registrar")
-    public String Registro(){
-        return "registrarse.html";
+    public String Profesor(){
+        return "registrarProfesor.html";
     }
+    
 }
