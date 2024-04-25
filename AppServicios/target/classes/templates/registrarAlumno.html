@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     </head>
     <body>
     <h1>Registro de Profesor</h1>
-    <form action="procesar_registro.php" method="POST" enctype="multipart/form-data">
+    <form th:action="@{/alumno/registro/}" method="POST"enctype="multipart/form-data">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
