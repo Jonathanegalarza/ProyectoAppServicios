@@ -5,7 +5,7 @@ public enum Rol {
     
     ADMIN("Administrador"),
     PROFESOR("Profesor"),
-    CLIENTE("Cliente");
+    ALUMNO("alumno");
 
     private final String descripcion;
 

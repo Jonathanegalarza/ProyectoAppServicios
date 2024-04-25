@@ -5,8 +5,10 @@
  */
 package com.example.AppServicios.Controladores;
 
+import com.example.AppServicios.Entidades.Imagen;
 import com.example.AppServicios.Servicios.ProfesorServicio;
 import com.example.Excepciones.MiException;
+import java.util.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,12 +29,11 @@ public class ProfesorControlador {
         return "registrarProfesor.html";
     }
    @PostMapping("/registro")
-    public String registro(String validador, String nombre, String apellido, String dni, String telefono,
-            String direccion, String email, String password,String materia,String HorasDisponibles,String diasDiponibles,  
-            ModelMap modelo, MultipartFile archivo, String password2) {
+    public String registro(String nombre, String apellido, String domicilio, String dni, String email, String password, String password2, String telefono, Date fechaNacimiento,
+                Imagen imagen,String horasDisponibles,String diasDisponibles, ModelMap modelo, MultipartFile archivo, String materia) {
         try {
 
-            profesorServicio.validar(nombre, apellido, dni, telefono, email, password, password2,direccion);
+            profesorServicio.crearProfesor(nombre, apellido, email, dni, email, password, password2, telefono, fechaNacimiento, imagen);
 
             modelo.put("nombre",nombre);
             modelo.put("apellido",apellido);
@@ -41,7 +42,11 @@ public class ProfesorControlador {
             modelo.put("email", email);
             modelo.put("password",password);
             modelo.put("password2",password2);
-            modelo.put("direccion", direccion);
+            modelo.put("domicilio", domicilio);
+            modelo.put("materia", materia);
+            modelo.put("horasDisponibles", horasDisponibles);
+            modelo.put("diasDisponibles", diasDisponibles);
+             
            
             
 

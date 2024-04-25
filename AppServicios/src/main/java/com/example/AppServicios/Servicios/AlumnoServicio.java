@@ -2,23 +2,23 @@
 package com.example.AppServicios.Servicios;
 
 import com.example.Excepciones.MiException;
-import com.example.AppServicios.Entidades.Cliente;
+import com.example.AppServicios.Entidades.Alumno;
 import com.example.AppServicios.Enumeraciones.Rol;
-import com.example.AppServicios.Repositorios.ClienteRepositorio;
 import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import com.example.AppServicios.Repositorios.AlumnoRepositorio;
 
 
 @Service
-public class ClienteServicio {
+public class AlumnoServicio {
     @Autowired
-    ClienteRepositorio clienteRepositorio;
+    AlumnoRepositorio alumnoRepositorio;
     
-//    public Cliente buscarPorEmail(String email) {
-//        Cliente cliente = clienteRepositorio.buscarPorEmail(email);
-//        return cliente;
+//    public Alumno buscarPorEmail(String email) {
+//        Alumno alumno = alumnoRepositorio.buscarPorEmail(email);
+//        return alumno;
 //    }
     
     
@@ -27,22 +27,22 @@ public class ClienteServicio {
     public void crearCliente(String nombre, String apellido, String domicilio, String dni, String email, String password, String password2, String telefono) throws MiException{
     validar(nombre, apellido, dni, telefono, email, password, password2, domicilio);
         
-        Cliente cliente = new Cliente();
-        cliente.setApellido(apellido);
-        cliente.setAlta(true);
-        cliente.setNombre(nombre);
-        cliente.setDireccion(domicilio);
-        cliente.setDni(dni);
-        cliente.setEmail(email);
-        cliente.setFechaAlta(new Date());
-//        cliente.setFechaNacimiento(fechaNacimiento);
-        cliente.setId(Long.MIN_VALUE);
-//        cliente.setImagen(imagen);
-        cliente.setPassword(password);
-        cliente.setRol(Rol.ADMIN);
-        cliente.setAlta(true);
+        Alumno alumno = new Alumno();
+        alumno.setApellido(apellido);
+        alumno.setAlta(true);
+        alumno.setNombre(nombre);
+        alumno.setDireccion(domicilio);
+        alumno.setDni(dni);
+        alumno.setEmail(email);
+        alumno.setFechaAlta(new Date());
+//        alumno.setFechaNacimiento(fechaNacimiento);
+        alumno.setId(Long.MIN_VALUE);
+//        alumno.setImagen(imagen);
+        alumno.setPassword(password);
+        alumno.setRol(Rol.ADMIN);
+        alumno.setAlta(true);
        
-        clienteRepositorio.save(cliente);
+        alumnoRepositorio.save(alumno);
     }
     
     
@@ -68,7 +68,7 @@ public class ClienteServicio {
             throw new MiException("El DNI no puede ser nulo o estar vacio");
         }
 
-        if (clienteRepositorio.existsByDni(dni)) {
+        if (alumnoRepositorio.existsByDni(dni)) {
             throw new MiException("El DNI ya está registrado en el sistema");
         }
 
@@ -78,7 +78,7 @@ public class ClienteServicio {
         if (email.isEmpty() || email == null) {
             throw new MiException("el Email no puede ser nulo o estar vacio");
         }
-        if (clienteRepositorio.existsByEmail(email)) {
+        if (alumnoRepositorio.existsByEmail(email)) {
             throw new MiException("El Email ya se encuentra registrado en el sistema");
         }
         if (password.isEmpty() || password == null || password.length() <= 5) {
