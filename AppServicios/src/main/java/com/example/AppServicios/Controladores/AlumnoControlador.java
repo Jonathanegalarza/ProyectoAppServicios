@@ -11,6 +11,6 @@ public class AlumnoControlador {
     
     @GetMapping("/registrar")
     public String Profesor(){
-        return  "registrarAlumno.html";
+        return "registrarAlumno.html";
     }
 }
