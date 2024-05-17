@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AlumnoRepositorio extends JpaRepository<Alumno, Long>{
     
-    @Query ("SELECT c FROM Cliente c WHERE c.email = :email")
+    @Query ("SELECT a FROM Alumno a WHERE a.email = :email")
     public Alumno buscarPorEmail(@Param("email")String email);
     boolean existsByDni(String dni);
     boolean existsByEmail(String email);

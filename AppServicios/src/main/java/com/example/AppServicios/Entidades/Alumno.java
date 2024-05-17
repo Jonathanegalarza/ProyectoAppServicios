@@ -16,6 +16,6 @@ public class Alumno extends Persona{
     debe haber una propiedad alumno que mapee la relación inversa.
    */
     @OneToMany(mappedBy = "alumno", cascade = CascadeType.ALL)
-    private List<Comentario> comentarios;
+    private List<Comentario>comentarios ;
 
 }

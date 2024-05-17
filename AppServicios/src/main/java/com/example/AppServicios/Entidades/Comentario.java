@@ -25,4 +25,7 @@ public class Comentario {
     private Profesor profesor;
 
    // private int puntuacion; // Puntuación dada por el cliente
+ @ManyToOne
+    @JoinColumn(name = "alumno_id") // Nombre de la columna que hace referencia al alumno
+    private Alumno alumno;
 }
